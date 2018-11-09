@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <title>北北基老人安養分佈</title>
+  <style>
+  * {
+      margin: 0 auto;
+      padding: 0px;
+      font-family:Microsoft JhengHei;
+      box-sizing: border-box;
+    }
+    header {
+      /* background-color: gray; */
+      height: 400px;
+    }
+    .carousel {
+      width:100%;
+      height: 80%;
+      background-color: rgb(204, 198, 120);
+    }
+    nav {
+      text-align: center;
+      display:none;
+    }
+    body {
+      background-color: #F2930C;
+    }
+    div
+    ul {
+      list-style: none;
+    }
+    a {
+      text-decoration:none;
+
+    }
+    .navbar {
+      list-style: none;
+      display: inline-block;
+      width: 100%;
+    }
+    .item a{
+      line-height: 200%;
+      display: block;
+      width: 100%;
+      border: 1px solid gray;
+      font-size: 2vmax;
+      background-color: rgba(140, 138, 187,0.56);
+      color: white;
+    }
+    .item a:hover{
+      line-height: 200%;
+      display: block;
+      width: 100%;
+      border: 1px solid gray;
+      background-color: rgba(53, 212, 217, 0.56);
+    }
+    .flip {
+      height: 10%;
+      text-align: center;
+      line-height: 40px;
+      font-size: 2.25vmax;
+      background-color: rgba(242, 76, 12,0.42);
+    }
+    .flip:hover {
+      background-color: rgba(242, 76, 12,0.8);
+    }
+    .rwdbutton {
+      display: none;
+    }
+    article {
+      width: 90%;
+      margin: 0 auto;
+      background-color:#57e9cb;
+      border-radius: 10px;
+      overflow:auto;
+      min-height: 1000px;
+      margin-bottom: 30px;
+    }
+    .section1 {
+      width: 68%;
+      /* background-color: pink; */
+      border-bottom: 2px dashed rgb(170, 33, 56);
+      margin-left: 10px;
+      padding-bottom: 0.1em;
+      float: left;
+      margin-bottom: 10px;
+    }
+    .section1 h1{
+      line-height: 200%;
+      font-size: 2.5vmax;
+    }
+    .section{
+      width: 100%;
+      margin-left: 10px;
+      padding-bottom: 0.1em;
+      float: left;
+      background-color: #D37460;
+      transition: 2s;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .section img{
+      margin-left: 50%;
+      padding-bottom: 0.1em;
+      float: left;
+      background-color: #D37460;
+      transition: 2s;
+
+      border-radius: 10px;
+    }
+    .photosection{
+      width: 30%;
+      margin-left: 20%;
+      padding-bottom: 0.1em;
+      float: left;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .photosection img{
+
+      padding-bottom: 0.1em;
+      float: left;
+      transition: 2s;
+      border-radius: 10px;
+    }
+    .photosection a{
+      font-size: 2.5vmax;
+    }
+    .section:hover{
+      background-color: #FCD7CC;
+    }
+
+    .section p{
+      line-height: 30px;　　
+      font-size: 1.5vmax;
+    }
+    .section5 {
+      border-bottom: none;
+      margin-bottom: 30px;
+    }
+    .linkmap {
+      width: 28%;
+      margin-top: 0px;
+      float: right;
+      line-height: 30px;
+    }
+    .linkmap a{
+      font-size: 2vmax;
+      color: white;
+    }
+    .linkmap a:hover{
+      color:#DBF20C;
+    }
+
+
+    .linkmap h1{
+      line-height: 200%;
+      font-size: 2.5vmax;
+    }
+    footer{
+      height: 50px;
+      width: 100%;
+      background-color: #FFEBB0;
+      margin-bottom: 0px;
+      line-height: 50px;
+    }
+    .clear {
+      clear:both; height: 0; line-height: 0; font-size: 0;
+    }
+
+    @media only screen and (max-width: 780px) {
+      .flip {
+        display: none;
+      }
+      .rwdbutton {
+        float: right;
+        width: 40px;
+        height: 40px;
+        margin: 10px 10px 0 0;
+        display: block;
+        border-radius: 10px;
+        outline:none;
+      }
+      nav {
+        text-align: center;
+        display:none;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="carousel">
+      <button class="rwdbutton"></button>
+      <span></span>
+    </div>
+    <!-- 這裡是下拉選單的標題文字 -->
+    <div class="flip"><strong>北北基安養分佈及介紹▼</strong></div>
+    <nav>
+      <ul class="navbar">
+        <!-- 這裡是選單的內的選項 -->
+        <li class="item"><strong><a href="taipei.html">台北市</a></strong></li>
+        <li class="item"><strong><a href="newtaipei.html">新北市</a></strong></li>
+        <li class="item"><strong><a href="keelung.html">基隆市</a></strong></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article>
+      <div class="section1">
+        <h1>安樂區</h1>
+      </div>
+      <!-- 右側連結的選單 -->
+      <div class="linkmap">
+          <a href="index.html"><img style="margin-top:20px;" src="img/logo.png" alt="安養介紹"></a>
+          <h1><strong>安養相關網站</strong></h1>
+          <!-- 這部分放網頁連結跟名稱-->
+          <div>
+            <ul>
+            <li><a href="http://www.dosw2.gov.taipei/dosw/seniorhome/index.htm" target="_blank">台北市政府-社會局</a></li>
+            <li><a href="http://www.kiwi86.com/Student/Pess_Add/Pess_Form2/Nursing.htm">台灣各大退休養老安養中心</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="photosection">
+          <a href="http://www.klrah.gov.tw/" target="_blank">基隆市立仁愛之家</a>
+          <img src="img/anle1.png" style="width:100%; display:block;" alt="">
+      </div>
+      <div class="photosection">
+          <a href="http://hcln19.myweb.hinet.net/" target="_blank">基隆市私立志心老人養護中心</a>
+          <img src="img/anle1.png" style="width:100%; display:block;" alt="">
+      </div>
+      <div class="photosection">
+          <a href="http://www.klrah.gov.tw/">基隆市立仁愛之家</a>
+          <img src="img/anle1.png" style="width:100%; display:block;" alt="">
+      </div>
+      <div class="photosection">
+          <a href="http://www.klrah.gov.tw/">基隆市立仁愛之家</a>
+          <img src="img/anle1.png" style="width:100%; display:block;" alt="">
+      </div>
+      <div class="photosection">
+          <a href="http://www.klrah.gov.tw/">基隆市立仁愛之家</a>
+          <img src="img/anle1.png" style="width:100%; display:block;" alt="">
+      </div>
+      <div class="photosection">
+          <a href="http://www.klrah.gov.tw/">基隆市立仁愛之家</a>
+          <img src="img/anle1.png" style="width:100%; display:block;" alt="">
+      </div>
+      <div class="photosection">
+          <a href="http://www.klrah.gov.tw/">基隆市立仁愛之家</a>
+          <img src="img/anle1.png" style="width:100%; display:block;" alt="">
+      </div>
+
+      <!-- 這裡是文章內容 -->
+
+  </article>
+  <!-- 頁尾 -->
+  <footer>Copyright © 2018 安養專題</footer>
+
+  <script type="text/javascript">
+    $('.flip').click(function(){
+            var boolean = false;
+            if(boolean==false){
+                $('nav').slideToggle("slow");
+            }
+            console.log($('nav').css("display"));
+    });
+    $('.rwdbutton').click(function(){
+            $('nav').slideToggle("slow");
+              console.log($('nav').css('dispaly'));
+    });
+  </script>
+
+</body>
+</html>

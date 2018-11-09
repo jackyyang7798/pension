@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/jquery.rwdImageMaps.js"></script>
+  <title>北北基老人安養分佈</title>
+  <style>
+  * {
+      margin: 0 auto;
+      padding: 0px;
+      font-family:Microsoft JhengHei;
+      box-sizing: border-box;
+    }
+    header {
+      /* background-color: gray; */
+      height: 400px;
+    }
+    #box {
+      width:100%;
+      background-color: rgb(204, 198, 120);
+      height: 80%;
+    }
+    #box img {
+      display: block;
+      margin: auto;
+      width: 100%;
+      height: 320px;
+      max-height:100%;
+      max-width:100%;
+
+    }
+    nav {
+      text-align: center;
+      display:none;
+    }
+    body {
+      background-color: #F2930C;
+    }
+    div
+    ul {
+      list-style: none;
+    }
+    a {
+      text-decoration:none;
+
+    }
+    .navbar {
+      list-style: none;
+      display: inline-block;
+      width: 100%;
+    }
+    .item a{
+      line-height: 200%;
+      display: block;
+      width: 100%;
+      border: 1px solid gray;
+      font-size: 2vmax;
+      background-color: rgba(140, 138, 187,0.56);
+      color: white;
+    }
+    .item a:hover{
+      line-height: 200%;
+      display: block;
+      width: 100%;
+      border: 1px solid gray;
+      background-color: rgba(53, 212, 217, 0.56);
+    }
+    .flip {
+      height: 10%;
+      text-align: center;
+      line-height: 40px;
+      font-size: 2.25vmax;
+      background-color: rgba(242, 76, 12,0.42);
+    }
+    .flip:hover {
+      background-color: rgba(242, 76, 12,0.8);
+    }
+    .rwdbutton {
+      display: none;
+    }
+    article {
+      width: 90%;
+      margin: 0 auto;
+      background-color:#57e9cb;
+      border-radius: 10px;
+      overflow:auto;
+      min-height: 1000px;
+      margin-bottom: 30px;
+    }
+    .section1 {
+      width: 68%;
+      /* background-color: pink; */
+      border-bottom: 2px dashed rgb(170, 33, 56);
+      margin-left: 10px;
+      padding-bottom: 0.1em;
+      float: left;
+      margin-bottom: 10px;
+    }
+    .section1 h1{
+      line-height: 200%;
+      font-size: 2.5vmax;
+    }
+    .section{
+      width: 68%;
+      margin-left: 10px;
+      padding-bottom: 0.1em;
+      float: left;
+      background-color: #D37460;
+      transition: 2s;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    .section:hover{
+      background-color: #FCD7CC;
+    }
+
+    .section p{
+      line-height: 30px;　　
+      font-size: 1.5vmax;
+    }
+    .section5 {
+      border-bottom: none;
+      margin-bottom: 30px;
+    }
+    .linkmap {
+      width: 28%;
+      margin-top: 0px;
+      float: right;
+      line-height: 30px;
+    }
+    .linkmap a{
+      font-size: 2vmax;
+      color: white;
+    }
+    .linkmap a:hover{
+      color:#DBF20C;
+    }
+
+
+    .linkmap h1{
+      line-height: 200%;
+      font-size: 2.5vmax;
+    }
+    footer{
+      height: 50px;
+      width: 100%;
+      background-color: #FFEBB0;
+      margin-bottom: 0px;
+      line-height: 50px;
+    }
+    .clear {
+      clear:both; height: 0; line-height: 0; font-size: 0;
+    }
+
+    @media only screen and (max-width: 780px) {
+      
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="box">
+      <div class="tab-content" id="con1">
+      <img src="img/img1.jpg"alt="Dreamweaver">
+      </div>
+      <div class="tab-content" id="con2">
+      <img src="img/img2.jpg" alt="Dreamweaver">
+      </div>
+      <div class="tab-content" id="con3">
+      <img src="img/img3.jpg"  alt="Dreamweaver">
+      </div>
+      <span></span>
+    </div>
+    <!-- 這裡是下拉選單的標題文字 -->
+    <div class="flip"><strong>北北基安養分佈及介紹▼</strong></div>
+    <nav>
+      <ul class="navbar">
+        <!-- 這裡是選單的內的選項 -->
+        <li class="item"><strong><a href="taipei.html">台北市</a></strong></li>
+        <li class="item"><strong><a href="newtaipei.html">新北市</a></strong></li>
+        <li class="item"><strong><a href="keelung.html">基隆市</a></strong></li>
+      </ul>
+    </nav>
+
+
+  </header>
+
+  <article>
+      <div class="section1">
+        <h1>安養區域選擇</h1>
+      </div>
+      <!-- 右側連結的選單 -->
+      <div class="linkmap">
+          <a href="index.html"><img style="margin-top:20px;" src="img/logo.png" alt="安養介紹"></a>
+          <h1><strong>安養相關網站</strong></h1>
+          <!-- 這部分放網頁連結跟名稱-->
+          <div>
+            <ul>
+            <li><a href="http://www.dosw2.gov.taipei/dosw/seniorhome/index.htm" target="_blank">台北市政府-社會局</a></li>
+            <li><a href="http://www.kiwi86.com/Student/Pess_Add/Pess_Form2/Nursing.htm">台灣各大退休養老安養中心</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section">
+        <img style="width:100%; display:block;" id="Image-Maps-Com-image-maps-2018-11-08-111204" src="http://www.image-maps.com/m/private/0/91j0eq29kpomju49anc4lgmje6_keelung.jpg" border="0" width="1541" height="1403" orgWidth="1541" orgHeight="1403" usemap="#image-maps-2018-11-08-111204" alt="" />
+        <map name="image-maps-2018-11-08-111204" id="ImageMapsCom-image-maps-2018-11-08-111204">
+        <area shape="rect" coords="1539,1401,1541,1403" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+        <area  alt="" title="安樂區" href="anle.html" shape="poly" coords="762,427,746,379,720,350,709,304,695,277,675,241,706,185,700,142,643,158,614,216,585,227,544,236,519,277,441,319,460,345,476,374,478,403,521,446,572,478,617,513,636,542,647,578,689,627,673,623,661,616,658,602,740,634,771,673,794,686,826,708,853,694,902,694,917,644,899,579,907,537,895,494,847,461" style="outline:none;" target="_self"     />
+        <area  alt="" title="仁愛區" href="renai.html" shape="poly" coords="931,560,964,540,980,546,1009,546,1029,558,1064,572,1076,606,1064,654,1058,681,1062,702,1072,727,1039,749,1000,761,982,757,961,728,939,705,913,704,907,692,912,615,910,591,907,573" style="outline:none;" target="_self"     />
+        <area  alt="" title="信義區" href="xinyi.html" shape="poly" coords="1026,541,1040,520,1091,508,1147,499,1207,494,1235,456,1270,427,1309,440,1316,471,1334,522,1370,534,1403,587,1436,643,1425,696,1389,704,1337,659,1293,664,1231,640,1176,708,1136,718,1109,720,1077,729,1065,670,1081,622,1084,603,1066,571" style="outline:none;" target="_self"     />
+        <area  alt="" title="暖暖區" href="Warm.html" shape="poly" coords="930,708,976,760,1042,758,1073,741,1098,765,1095,799,1121,816,1118,869,1122,909,1127,992,1211,1046,1250,1096,1231,1135,1217,1157,1171,1192,1160,1208,1095,1208,995,1258,907,1247,865,1227,865,1145,853,1074,843,999,856,920,851,866,808,837,845,778,874,729" style="outline:none;" target="_self"     />
+        <area  alt="" title="七堵區" href="cido.html" shape="poly" coords="436,323,315,359,274,382,236,392,217,416,172,418,83,444,36,468,35,502,66,535,92,563,151,574,185,622,186,666,179,688,219,775,230,801,225,843,217,825,254,867,309,915,378,964,412,974,473,951,474,969,465,999,473,1032,625,1117,674,1126,742,1126,809,1201,854,1220,859,1126,837,1016,844,965,855,891,797,838,834,793,893,705,847,702,824,713,771,692,739,643,667,634,634,571,624,521,556,475,523,465,487,431,473,375,452,335" style="outline:none;" target="_self"     />
+        </map>
+
+      </div>
+
+      <!-- 這裡是文章內容 -->
+
+  </article>
+  <!-- 頁尾 -->
+  <footer>Copyright © 2018 安養專題</footer>
+
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+         $('img[usemap]').rwdImageMaps();
+     });
+    $('.flip').click(function(){
+            var boolean = false;
+            if(boolean==false){
+                $('nav').slideToggle("slow");
+            }
+            console.log($('nav').css("display"));
+    });
+    $('.rwdbutton').click(function(){
+            $('nav').slideToggle("slow");
+              console.log($('nav').css('dispaly'));
+    });
+    window.onload=function(){
+
+      var num=1;
+    	var tNum=3;
+    	var duration=4000;
+      run();
+	    document.getElementById("box").onmouseover=stopRun;
+    	document.getElementById("box").onmouseout=run;
+
+    	for(var i=1; i<=tNum; i++){
+    		document.getElementById("con"+i).style.display="none";
+    	}
+    	document.getElementById("con1").style.display="block";
+
+          function autoShow(){
+    		for(var i=1; i<=tNum; i++){
+    			document.getElementById("con"+i).style.display="none";
+    		}
+    		if(num<tNum){ num++;}else{ num=1;}
+    		document.getElementById("con"+num).style.display="block";
+    	}
+
+    	function show(){
+    		num=this.id.substr(3)-1;
+    		autoShow();
+    	}
+
+    	function stopRun(){ clearInterval(myInterval);}
+
+    	function run(){ myInterval= setInterval( autoShow, duration);}
+
+
+
+    }
+  </script>
+
+</body>
+</html>
